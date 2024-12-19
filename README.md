@@ -51,6 +51,7 @@ This creates a decentralized and scalable platform for the future of music inter
    npx hardhat test
    ```
 
+   ```bash
     HarmoniX
 
     MusicNFT Contract
@@ -87,6 +88,7 @@ This creates a decentralized and scalable platform for the future of music inter
 
 
   11 passing (2s)
+  ```
 
 4. Deploy the contracts:
    ```bash
