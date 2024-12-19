@@ -90,7 +90,7 @@ This creates a decentralized and scalable platform for the future of music inter
 
 4. Deploy the contracts:
    ```bash
-   npx hardhat run ignition/modules/deploy.js --network opbnb-testnet
+   npx hardhat run ignition/modules/deploy.js --network opBNBTestnet
    ```
 
 Here are the deployed addresses:
@@ -102,7 +102,19 @@ Here are the deployed addresses:
 
 Here is the link to the verified contract addresses:
 
-run npx hardhat verify ignition/modules/deploy.js --network opBNBTestnet 
+run npx hardhat verify --network opBNBTestnet (contract address) ("argument")
+
+- Successfully verified contract RewardToken on the block explorer.
+   - https://testnet.opbnbscan.com/address/0x602f9D9bb0EBdFC7Fd9CFaC2116aF668974e8ea4#code 
+
+- Successfully verified contract MusicNFT on the block explorer.
+   - https://testnet.opbnbscan.com/address/0x443F37DD5d9CB3273B52344aA15023149Ff9060b#code
+
+- Successfully verified contract RoyaltyDistribution on the block explorer.
+   - https://testnet.opbnbscan.com/address/0x8eF53c7Fc9Cfb88bb4aB833AF417537E6af1a52f#code
+
+- Successfully verified contract GameMechanics on the block explorer.
+   - https://testnet.opbnbscan.com/address/0xd109932a2C687F259E842CC160F13E14Da27dC01#code
 
 ---
 
@@ -146,12 +158,5 @@ run npx hardhat verify ignition/modules/deploy.js --network opBNBTestnet
    Use the deployed Telegram bot to mint NFTs, vote, or play games.
 
 ---
-
-
-
-
-
-npx hardhat test
-
 
  
