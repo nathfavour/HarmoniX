@@ -48,6 +48,11 @@ export default function RootLayout({
         <div className="min-h-screen">
           {children}
         </div>
+        <footer className="bg-gray-100 dark:bg-gray-800 text-center py-4 mt-8 border-t border-gray-200 dark:border-gray-700">
+          <p className="text-gray-500 dark:text-gray-300 text-sm">
+            © 2023 HarmoniX — All rights reserved.
+          </p>
+        </footer>
       </body>
     </html>
   );
