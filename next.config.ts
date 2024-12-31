@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
   // Removed i18n configuration
 };
 
+
+
 export default nextConfig;
 
 
