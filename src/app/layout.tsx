@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Harmonix",
-  description: "A music player that helps you focus",
+  description: "immersive music world with thrilling NFT battles, curated discovery, and seamless trading.",
 };
 
 export default function RootLayout({
