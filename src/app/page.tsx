@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Card } from "@/components/Cards";
 import { PrimaryButton } from "@/components/Buttons";
 
