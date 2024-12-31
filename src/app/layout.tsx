@@ -24,18 +24,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="bg-gray-100 p-4 flex justify-between">
-          <h2 className="font-bold text-xl">HarmoniX</h2>
-          <nav className="space-x-4">
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/discovery" className="hover:underline">Discovery</a>
-            <a href="/dashboard" className="hover:underline">Dashboard</a>
-          </nav>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
+                HarmoniX
+              </h2>
+              <nav className="flex space-x-8">
+                {['Home', 'Discovery', 'Dashboard'].map((item) => (
+                  <a
+                    key={item}
+                    href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                    className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  >
+                    {item}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
         </header>
-        {children}
+        <div className="min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );
